@@ -20,10 +20,74 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Dock & Dredge | Marine Construction Southwest Florida",
+  metadataBase: new URL("https://dock-dredge.com"),
+  title: {
+    default: "Dock & Dredge | Marine Construction Southwest Florida",
+    template: "%s | Dock & Dredge",
+  },
   description:
-    "Premier dredging and marine construction services in Southwest Florida. Owned and operated by Nick Delrocini.",
-  generator: "v0.app",
+    "Premier dredging and marine construction services in Southwest Florida. Professional dock construction, seawall installation, and waterway dredging services. Owned and operated by Nick Delrocini and Anthony Carlo.",
+  keywords: [
+    "dredging services",
+    "marine construction",
+    "dock construction",
+    "seawall installation",
+    "Southwest Florida",
+    "Cape Coral",
+    "waterfront construction",
+    "boat lift installation",
+    "canal dredging",
+    "residential dredging",
+    "commercial dredging",
+    "Florida marine services",
+  ],
+  authors: [{ name: "Dock & Dredge" }],
+  creator: "Dock & Dredge",
+  publisher: "Dock & Dredge",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://dock-dredge.com",
+    title: "Dock & Dredge | Marine Construction Southwest Florida",
+    description:
+      "Premier dredging and marine construction services in Southwest Florida. Professional dock construction, seawall installation, and waterway dredging services.",
+    siteName: "Dock & Dredge",
+    images: [
+      {
+        url: "/dock-dredge-logo.svg",
+        width: 1200,
+        height: 630,
+        alt: "Dock & Dredge Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dock & Dredge | Marine Construction Southwest Florida",
+    description:
+      "Premier dredging and marine construction services in Southwest Florida.",
+    images: ["/dock-dredge-logo.svg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://dock-dredge.com",
+  },
+  category: "Marine Construction",
 };
 
 export default function RootLayout({
