@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <style>
+      .anchor { fill: #D64E4E; }
+      .wave { fill: #1E4976; }
+      .text { fill: #1E4976; font-family: Arial, sans-serif; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- Anchor -->
+  <circle class="anchor" cx="215" cy="60" r="25"/>
+  <circle fill="white" cx="215" cy="60" r="12"/>
+  
+  <rect class="anchor" x="200" y="80" width="30" height="80" rx="15"/>
+  
+  <rect class="anchor" x="125" y="115" width="180" height="30" rx="15"/>
+  
+  <path class="anchor" d="M 160 180 Q 120 220 110 250 Q 100 280 130 300 L 180 270 Z" class="anchor"/>
+  
+  <path class="anchor" d="M 270 180 Q 310 220 320 250 Q 330 280 300 300 L 250 270 Z" class="anchor"/>
+  
+  <!-- Wave -->
+  <path class="wave" d="M 240 230 Q 270 250 300 270 Q 310 285 290 295 Q 270 305 250 290 Q 230 275 210 285 L 240 230 Z"/>
+  
+  <!-- Text -->
+  <text class="text" x="50" y="380" font-size="80">DOCK</text>
+  <text class="text" x="30" y="460" font-size="70">&amp; DREDGE</text>
+</svg>
